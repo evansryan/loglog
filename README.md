@@ -28,10 +28,11 @@ While this list is not exhaustive, it is a list of features that are planned for
 ## Technologies
 
 - HTML
-- TailwindCSS
+- TailwindCSS/CSS
 - JavaScript
 - MySQL
 - AWS
+- Figma (Design Work)
 
 ## About the Developer
 
