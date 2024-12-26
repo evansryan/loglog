@@ -9,6 +9,7 @@ Log² is intended to be a fun way to track your poop and poop habits.
 While this list is not exhaustive, it is a list of features that are planned for the project. This list is not in any particular order. New features will be added and features may be removed. New features will be added in bold.
 
 - [ ] Landing Page
+- [ ] Tracking Form
 - [ ] User Accounts
   - [ ] Sign Up
   - [ ] Sign In
@@ -33,6 +34,28 @@ While this list is not exhaustive, it is a list of features that are planned for
 - MySQL
 - AWS
 - Figma (Design Work)
+
+## Roadmap
+
+This will be a long journey. With that said, I do have a general plan and roadmap. Similar to the planned features, except this will have more detail and show what is currently being worked on.
+
+- [ ] Landing Page Design
+  - [ ] Color Palette Selection
+  - [ ] Font Selection
+  - [ ] Layout Design
+- [ ] Tracking Form Design
+  - [ ] Field Selection
+  - [ ] Field Validation
+  - [ ] Field Styling
+  - [ ] Field Layout
+- [ ] User Dashboard Design
+  - [ ] Profile
+    - [ ] User Information Fields
+    - [ ] Profile Picture
+    - [ ] Displayed Information
+  - [ ] Usage Selection
+    - [ ] Per Flush Water Usage Entry
+    - [ ] Toilet Paper Cost Calculator
 
 ## About the Developer
 
