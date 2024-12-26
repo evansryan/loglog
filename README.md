@@ -33,6 +33,7 @@ While this list is not exhaustive, it is a list of features that are planned for
 - JavaScript
 - MySQL
 - AWS
+- Cursor IDE
 - Figma (Design Work)
 
 ## Roadmap
