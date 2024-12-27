@@ -40,10 +40,11 @@ While this list is not exhaustive, it is a list of features that are planned for
 
 This will be a long journey. With that said, I do have a general plan and roadmap. Similar to the planned features, except this will have more detail and show what is currently being worked on. Current work is featured in bold.
 
-- [ ] **Landing Page Design**
-  - [x] Color Palette Selection
-  - [x] Font Selection
-  - [ ] **Layout Design**
+- [x] ~~Landing Page Design~~
+  - [x] ~~Color Palette Selection~~
+  - [x] ~~Font Selection~~
+  - [x] ~~Layout Design~~
+- [ ] **Build Landing Page**
 - [ ] Tracking Form Design
   - [ ] Field Selection
   - [ ] Field Validation
