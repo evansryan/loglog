@@ -33,6 +33,3 @@ yarn-error.log*
 # Test coverage output
 coverage/
 
-# Tailwind-specific files
-tailwind.config.js
-postcss.config.js

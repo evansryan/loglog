@@ -6,18 +6,15 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        brand_cream: "#FFF5E1",
-        brand_orange: "#FFA500",
-        brand_green: "#228B22",
-        brand_gray: "#696969",
-        brand_blue: "#76D7EA",
-        brand_brown: "#A0522D",
-        brand_black: "#121212",
+        brand_darkblue: "#14213D",
+        brand_orange: "#FCA311",
+        brand_offwhite: "#E5E5E5",
+        brand_green: "#4AF626",
       },
       fontFamily: {
-        chewy: ["Chewy"],
-        poppins: ["Poppins"],
-        openSans: ["Open Sans"],
+        playfair: ["Playfair Display", "serif"],
+        bebas: ["Bebas Neue", "sans-serif"],
+        openSans: ["Open Sans", "sans-serif"],
       },
     },
   },
