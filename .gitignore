@@ -1,0 +1,38 @@
+# Node.js dependencies
+/node_modules/
+
+# Build directories (you might not need to commit build artifacts)
+/public/src/css/output.css  # Output from Tailwind build
+/public/src/js/
+
+# Operating system files (macOS, Windows)
+.DS_Store
+Thumbs.db
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment files (if you're using any secret keys)
+.env
+.env.local
+.env.production
+
+# AWS credentials (if stored locally)
+.aws/
+
+# IDE/editor-specific files
+.vscode/
+.idea/
+
+# Other temporary files
+*.log
+*.tmp
+
+# Test coverage output
+coverage/
+
+# Tailwind-specific files
+tailwind.config.js
+postcss.config.js
