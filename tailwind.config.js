@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["index.html"],
+  content: ["./public/index.html"],
   theme: {
     extend: {
       colors: {
@@ -10,6 +10,7 @@ module.exports = {
         brand_gray: "#696969",
         brand_blue: "#76D7EA",
         brand_brown: "#A0522D",
+        brand_black: "#121212",
       },
       fontFamily: {
         chewy: ["Chewy"],
