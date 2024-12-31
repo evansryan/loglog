@@ -22,10 +22,6 @@ yarn-error.log*
 # AWS credentials (if stored locally)
 .aws/
 
-# IDE/editor-specific files
-.vscode/
-.idea/
-
 # Other temporary files
 *.log
 *.tmp

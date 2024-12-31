@@ -8,7 +8,7 @@ Log² is intended to be a fun way to track your poop and poop habits.
 
 While this list is not exhaustive, it is a list of features that are planned for the project. This list is not in any particular order. New features will be added and features may be removed. New features will be added in bold.
 
-- [ ] Landing Page
+- [x] Landing Page
 - [ ] Tracking Form
 - [ ] User Accounts
   - [ ] Sign Up
@@ -44,8 +44,8 @@ This will be a long journey. With that said, I do have a general plan and roadma
   - [x] ~~Color Palette Selection~~
   - [x] ~~Font Selection~~
   - [x] ~~Layout Design~~
-- [ ] **Build Landing Page**
-- [ ] Tracking Form Design
+- [x] Build Landing Page
+- [ ] **Tracking Form Design**
   - [ ] Field Selection
   - [ ] Field Validation
   - [ ] Field Styling

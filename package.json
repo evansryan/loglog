@@ -1,6 +1,6 @@
 {
   "name": "loglog",
-  "version": "1.0.0alpha.3",
+  "version": "1.0.0alpha.4",
   "description": "A simple app to help you track your bowel movements",
   "main": "index.html",
   "devDependencies": {

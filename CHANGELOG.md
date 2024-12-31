@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.0.0alpha.4] - 2024-12-31
+
+- FAQ Section added to index.html
+  - Styled FAQ section
+- Footer added to index.html
+  - Styled footer
+- Quick Entry button added to index.html for use later
+  - Styled Quick Entry button
+- Fixed centering of the nav bar. This may move near the buttons in a future update.
+- Added entryform.html
+  - Styled entryform.html
+  - Added entryform.js
+
 ## [1.0.0alpha.3] - 2024-12-30
 
 - Completely updated the color scheme and styling of the website

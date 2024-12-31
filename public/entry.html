@@ -1,0 +1,60 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/css/output.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+    </style>
+    <title>Log²</title>
+  </head>
+  <body class="antialiased bg-black">
+    <!-- Header -->
+    <header class="flex justify-between items-center border-b-2 border-brand_orange bg-black py-4">
+      <div class="flex items-center">
+        <div id="logo" class="text-6xl text-white font-bebas ml-6">
+          <a href="/">LogLog</a>
+        </div>
+        <div><img src="/src/assets/images/toiletpaper.png" alt="Welcome to LogLog" class="w-10 h-auto pl-2" /></div>
+      </div>
+      <div id="navBar" class="absolute left-1/2 transform -translate-x-1/2 flex justify-center space-x-12 text-4xl text-white font-bebas">
+        <a href="/">Why track?</a>
+        <a href="/">FAQ</a>
+      </div>
+      <div id="rightNav" class="flex items-center">
+        <button id="dashboardbutton" class="text-2xl text-black font-bebas mr-6 bg-brand_green rounded-md px-4 py-2">Quick Entry</button>
+        <button id="dashboardbutton" class="text-2xl text-white font-bebas mr-6 bg-brand_orange rounded-md px-4 py-2">Dashboard</button>
+      </div>
+    </header>
+
+    <!-- Content -->
+    <div id="entryform" class="bg-brand_darkblue py-5">
+      <h1 id="entryheader" class="text-5xl text-brand_green font-bebas mb-3 text-center underline underline-offset-4">Enter your data</h1>
+      <div class="flex justify-center font-openSans text-white mb-4">Please enter the following information to create a new entry. Required fields are marked with &nbsp;<span class="text-red-500">*</span>.</div>
+      <div class="flex flex-col max-w-[900px] mx-auto">
+        <div class="font-openSans font-bold text-white mb-4">Date&nbsp;<span class="text-red-500">*</span> <input type="date" id="date" name="date" required class="ml-2 rounded-md px-2 py-1 font-normal text-black" /></div>
+        <div class="font-openSans font-bold text-white mb-4">Time&nbsp;<span class="text-red-500">*</span> <input type="time" id="time" name="time" required class="ml-2 rounded-md px-2 py-1 font-normal text-black" /></div>
+
+        <div class="font-openSans font-bold text-white mb-4">
+          ZIP Code&nbsp;<span class="text-red-500">*</span>
+          <input type="text" id="zipcode" name="zipcode" pattern="[0-9]{5}" maxlength="5" required class="ml-2 rounded-md px-2 py-1 font-normal text-black" />
+        </div>
+        <div class="font-openSans font-bold text-white mb-4">City <input type="text" id="city" name="city" class="ml-2 rounded-md px-2 py-1 font-normal text-black" readonly /></div>
+        <div class="font-openSans font-bold text-white mb-4">State <input type="text" id="state" name="state" class="ml-2 rounded-md px-2 py-1 font-normal text-black" readonly /></div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white text-center py-4 font-openSans font-semibold border-t-2 border-brand_orange">
+      <div class="flex justify-center space-x-8 mb-2">
+        <a href="/" class="hover:text-brand_green">About</a>
+        <a href="/" class="hover:text-brand_green">Team</a>
+        <a href="https://github.com/evansryan/loglog" class="hover:text-brand_green" target="_blank">GitHub</a>
+      </div>
+      <p>&copy; 2025 LogLog. All rights reserved.</p>
+    </footer>
+    <script src="/src/js/entryform.js"></script>
+  </body>
+</html>

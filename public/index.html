@@ -11,25 +11,70 @@
     <title>Log²</title>
   </head>
   <body class="antialiased bg-black">
-    <header class="flex justify-between items-center py-4 border-b-2 border-brand_orange">
-      <div id="logo" class="text-6xl text-white font-bebas ml-6">
-        <a href="/">LogLog
+    <!-- Header -->
+    <header class="flex justify-between items-center border-b-2 border-brand_orange bg-black py-4">
+      <div class="flex items-center">
+        <div id="logo" class="text-6xl text-white font-bebas ml-6">
+          <a href="/">LogLog</a>
+        </div>
+        <div><img src="/src/assets/images/toiletpaper.png" alt="Welcome to LogLog" class="w-10 h-auto pl-2" /></div>
       </div>
-      <div><img src="/src/assets/images/toiletpaper.png" alt="Welcome to LogLog" class="w-10 h-auto pl-2" /></div></a>
-      <div id="navBar" class="flex justify-center space-x-12 text-4xl text-white font-bebas flex-grow">
+      <div id="navBar" class="absolute left-1/2 transform -translate-x-1/2 flex justify-center space-x-12 text-4xl text-white font-bebas">
         <a href="/">Why track?</a>
         <a href="/">FAQ</a>
       </div>
       <div id="rightNav" class="flex items-center">
-        <button id="dashboardButton" class="text-2xl text-white font-bebas mr-6 bg-brand_orange rounded-md px-4 py-2">Dashboard</button>
+        <button id="dashboardbutton" class="text-2xl text-black font-bebas mr-6 bg-brand_green rounded-md px-4 py-2" onclick="window.location.href='/entry.html'">Quick Entry</button>
+        <button id="dashboardbutton" class="text-2xl text-white font-bebas mr-6 bg-brand_orange rounded-md px-4 py-2">Dashboard</button>
       </div>
     </header>
 
-    <div id="introduction" class="bg-brand_darkblue py-10">
-      <h1 id="welcomeHeader" class="text-5xl text-brand_green font-bebas ml-6 mb-3 text-center underline underline-offset-4">Welcome to LogLog!</h1>
+    <!-- Content -->
+    <div id="introduction" class="bg-brand_darkblue py-5">
+      <h1 id="welcomeheader" class="text-5xl text-brand_green font-bebas mb-3 text-center underline underline-offset-4">Welcome to LogLog!</h1>
       <div class="flex justify-center">
-        <div id="welcomeText" class="font-openSans text-white ml-6 max-w-[700px] text-center font-semibold">We're here to help you keep track of your bowel movements in a fun and insightful way. From time spent on the toilet to paper and water usage, we’ve got all the details covered. Let's make tracking your health a little less… taboo!</div>
+        <div id="welcomeText" class="font-openSans text-white max-w-[900px] text-center">We're here to help you keep track of your bowel movements in a fun and insightful way. From time spent on the toilet to paper and water usage, we’ve got all the details covered. Let's make tracking your health a little less… taboo!</div>
       </div>
     </div>
+
+    <div id="whytracksection" class="bg-brand_darkblue pb-5">
+      <h1 id="whytrackheader" class="text-5xl text-brand_green font-bebas mb-3 text-center underline underline-offset-4">Why Track?</h1>
+      <div class="flex-col items-center">
+        <div id="whytracktext" class="font-openSans text-white max-w-[900px] text-center mx-auto">
+          Believe it or not, tracking your bowel movements can actually be a good thing. It helps you understand your body better, and can even lead to healthier habits. Plus, it's a lot more fun than you might think!<br /><br />Have you ever wondered how long you spend on the toilet? How much water you use? How much toilet paper you go through? How much your job pays you for your time on the toilet?<br /><br />LogLog is here to answer those questions and more.
+        </div>
+        <div class="flex justify-center">
+          <button id="getstartedbutton" class="text-2xl text-white font-bebas bg-brand_orange rounded-md px-4 py-2 mt-4">Get Started</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="faqsection" class="bg-brand_darkblue py-5">
+      <h1 id="faqheader" class="text-5xl text-brand_green font-bebas mb-3 text-center underline underline-offset-4">FAQ</h1>
+      <div class="flex justify-center">
+        <div id="faqtext" class="font-openSans text-white max-w-[900px]">
+          <ol>
+            <li class="mb-4">
+              <span class="font-extrabold">1. What information is collected?</span><br />
+              At this point, we only collect the data you enter into the form. We do not sell any data to third parties.
+            </li>
+            <li class="mb-4">
+              <span class="font-extrabold">2. How much does it cost?</span> <br />
+              It's free!
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white text-center py-4 font-openSans font-semibold border-t-2 border-brand_orange">
+      <div class="flex justify-center space-x-8 mb-2">
+        <a href="/" class="hover:text-brand_green">About</a>
+        <a href="/" class="hover:text-brand_green">Team</a>
+        <a href="https://github.com/evansryan/loglog" class="hover:text-brand_green" target="_blank">GitHub</a>
+      </div>
+      <p>&copy; 2025 LogLog. All rights reserved.</p>
+    </footer>
   </body>
 </html>
