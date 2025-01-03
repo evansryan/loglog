@@ -3,7 +3,6 @@
 
 # Build directories (you might not need to commit build artifacts)
 /public/src/css/output.css  # Output from Tailwind build
-/public/src/js/
 
 # Operating system files (macOS, Windows)
 .DS_Store
