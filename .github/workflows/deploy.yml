@@ -3,8 +3,8 @@ name: Deploy to S3
 on:
   push:
     branches:
-      - main # Change to the branch you're using for deployment
-  workflow_dispatch: # This allows manual triggering
+      - main # Change this to the branch you want to deploy
+  workflow_dispatch:
 
 jobs:
   deploy:
@@ -22,19 +22,15 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Build Next.js (with Tailwind)
-        run: npm run build && npm run export
-
-      - name: Set up AWS CLI
-        uses: aws-actions/configure-aws-credentials@v1
-        with:
-          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-region: us-east-1
+      - name: Build TailwindCSS
+        run: npm run build:css
 
       - name: Sync files to S3
         run: |
-          aws s3 sync ./out s3://loglog.me --delete
+          aws s3 sync ./public s3://loglog.me --delete
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
 
       - name: Invalidate CloudFront Cache
         run: |
