@@ -3,8 +3,8 @@ name: Deploy to S3
 on:
   push:
     branches:
-      - main  # Change to the branch you're using for deployment
-  workflow_dispatch:  # This allows manual triggering
+      - main # Change to the branch you're using for deployment
+  workflow_dispatch: # This allows manual triggering
 
 jobs:
   deploy:
@@ -17,13 +17,13 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '16'
+          node-version: "16"
 
       - name: Install dependencies
         run: npm install
 
-      - name: Build Tailwind CSS
-        run: npx tailwindcss -i ./public/src/css/input.css -o ./public/src/css/output.css
+      - name: Build Next.js (with Tailwind)
+        run: npm run build && npm run export
 
       - name: Set up AWS CLI
         uses: aws-actions/configure-aws-credentials@v1
@@ -34,4 +34,11 @@ jobs:
 
       - name: Sync files to S3
         run: |
-          aws s3 sync ./public s3://loglog.me --delete
+          aws s3 sync ./out s3://loglog.me --delete
+
+      - name: Invalidate CloudFront Cache
+        run: |
+          aws cloudfront create-invalidation --distribution-id YOUR_DISTRIBUTION_ID --paths "/*"
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
